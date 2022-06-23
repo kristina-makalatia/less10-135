@@ -1,0 +1,126 @@
+/* header styles */
+.header-wraper {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    background-color: aqua;
+    padding: 20px;
+}
+.nav-ul {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+}
+.fa-bars {
+    font-size: 30px;
+    color: #fff;
+}
+.burger-bar {
+    display: none;
+}
+
+/* icons */
+.fa-facebook-messenger {
+    font-size: 30px;
+    color: blue;
+}
+.youtube {
+    font-size: 30px;
+    color: red;
+}
+.fa-facebook-messenger:hover {
+    color: yellow;
+}
+
+/* pseudo elements nav-example */
+.nav-a {
+    position: relative;
+    -webkit-transition: all .5s linear;
+    -o-transition: all .5s linear;
+    transition: all .5s linear;
+    padding: 5px;
+}
+.nav-a::after {
+    content: '';
+    position: absolute;
+    left:0;
+    bottom:0;
+    height: 1px;
+    width: 0%;
+    background-color: red;
+    -webkit-transition: all .5s linear;
+    -o-transition: all .5s linear;
+    transition: all .5s linear;
+}
+.nav-a:hover::after {
+    width: 60%;
+}
+.nav-a:hover {
+    color: #fff;
+}
+/* pseudo elemnts */
+/* .hello::before {
+    content: 'Academy';
+    font-size: 25px;
+    color: red;
+} */
+.hello::before {
+    content: url(../images/smiley.gif);
+}
+/* .hello::after {
+    content: '\00A9';
+    color: red;
+    margin-left: 15px;  
+} */
+.hello::after {
+    content: '';
+    width: 2px;
+    height: 25px;
+    background-color: blue;
+    display: inline-block;
+    margin-left: 15px;
+}
+
+
+/* form styles */
+.wraper-form-flex {
+    display: flex;
+    flex-direction: column;
+}
+.input-box {
+    max-width: 700px;
+    width: 100%;
+    color: red;
+    font-size: 20px;
+    text-transform: uppercase;
+}
+.input-box::placeholder,
+.textarea-block::placeholder{
+    color: blue;
+    font-size: 14px;
+    text-transform: capitalize;
+}
+.input-box:focus {
+    /* outline:none; */
+    outline-color: red;
+}
+.textarea-block {
+    max-width: 700px;
+    width: 100%;
+    height: 200px;
+    resize: none;
+}
+
+/* .input-box[type="password"] {
+    background-color: lightblue;
+} */
+.btn-send {
+    width: 200px;
+    background-color: blueviolet;
+    margin-top: 20px;
+    border: none;
+    border-radius: 25px;
+}
