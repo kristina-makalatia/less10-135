@@ -4,14 +4,17 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Lesson 10</title>
+    <meta name="description" content="Our website Description">
+    <meta name="keywords" content="Html, css, flex, responsive, form">
+    <meta name="author" content="kristina">
+    <title>Lesson 11</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/responsive.css">
 </head>
 <body>
-    <header>
+    <header class="header-wraper-main-block">
         <div class="header-wraper">
             <a href="#">LOGO</a>
 
@@ -22,6 +25,7 @@
                     </li>
                     <li>
                         <a class="nav-a" href="#">News</a>
+                        <i class="fa-solid fa-angle-down"></i>
                     </li>
                     <li>
                         <a class="nav-a" href="#">Contact</a>
@@ -60,6 +64,36 @@
                 <div class="wraper-form-flex">
                     <label for="message">Your Message</label>
                     <textarea name="yourmessage" id="message" class="textarea-block" placeholder="Enter Your message..."></textarea>
+                </div>
+
+                <div class="wraper-form-flex">
+                    <label for="cars"> Choose a car:</label>
+                    <select class="cars-select" name="choosecars" id="cars">
+                        <option value="none" selected disabled>Choose a car</option>
+                        <option value="bmw">BMW</option>
+                        <option value="mersedes">Mersedec</option>
+                        <option value="audi">Audi</option>
+                    </select>
+                </div>
+
+                <div class="radio">
+                    <div>
+                        <input type="radio" id="age1" name="chooseage">
+                        <label for="age1">18 - 25</label>
+                    </div>
+                    <div>
+                        <input type="radio" id="age2" name="chooseage">
+                        <label for="age2">25 - 55</label>
+                    </div> 
+                </div>
+
+                <div class="checkbox">
+                    <input type="checkbox" id="music" name="musichobby">
+                    <label for="music">Music</label>
+
+                    <input type="checkbox" id="dance" name="dancehobby">
+                    <label for="dance">Dance</label>
+
                 </div>
                
                 <button class="btn-send" type="submit">Submit</button>
